@@ -28,13 +28,13 @@ $(function() {
     slidesToShow: 2,
     prevArrow: '.wraper__feedback-people-topArrow',
     nextArrow: '.wraper__feedback-people-bottomArrow',
-    // responsive: [{
-    //   breakpoint: 1100, // максимальная ширина экрана
-    //   settings: {
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //   }
-    // }],
+    responsive: [{
+      breakpoint: 1100, // максимальная ширина экрана
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }],
     adaptiveHeight: true,
 
   });

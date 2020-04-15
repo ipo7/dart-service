@@ -647,10 +647,7 @@ body {
 .wraper__feedback-people-container .slick-list {
   overflow: hidden;
 }
-@media screen and (max-width: 420px) {
-  .wraper__feedback-people-container .slick-list {
-    min-height: 495px;
-  }
+
 }
 .wraper__feedback-people-container .slick-track {
   display: flex;

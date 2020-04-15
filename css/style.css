@@ -628,6 +628,11 @@ body {
   min-width: 0;
   flex: 0 1 auto;
 }
+@media screen and (max-width: 420px) {
+  .wraper__feedback-people {
+    min-height: 495px;
+  }
+}
 .wraper__feedback-people-topArrow {
   padding-left: 3.3%;
   padding-bottom: 10px;

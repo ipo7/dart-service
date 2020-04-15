@@ -647,8 +647,6 @@ body {
 .wraper__feedback-people-container .slick-list {
   overflow: hidden;
 }
-
-}
 .wraper__feedback-people-container .slick-track {
   display: flex;
   flex-direction: column;

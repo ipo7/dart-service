@@ -25,7 +25,8 @@ closeItem();
 
 $(function() {
 
-  $('.wraper__burger').on('click touchend', function() {
+  $('.wraper__burger').on('click touchend', function(e) {
+    e.stopPropagation(); e.preventDefault();
     $('.wraper__menu').slideToggle(300);
   });
 

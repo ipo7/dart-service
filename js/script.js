@@ -25,7 +25,7 @@ closeItem();
 
 $(function() {
 
-  $('.wraper__burger').on('mousedown touchstart', function() {
+  $('.wraper__burger').on('click touchend', function() {
     $('.wraper__menu').slideToggle(300);
   });
 

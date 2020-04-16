@@ -25,13 +25,11 @@ closeItem();
 
 $(function() {
 
-  $('.wraper__burger').on('mouseup touchstart', function() {
+  $('.wraper__burger').on('mousedown touchstart', function() {
     $('.wraper__menu').slideToggle(300);
   });
 
-  // $('.wraper__burger').tap(function() {
-  //   $('.wraper__menu').slideToggle(300);
-  // });
+
 
 
 

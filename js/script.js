@@ -21,7 +21,20 @@ function closeItem() {
 closeItem();
 
 
+
+
 $(function() {
+
+  $('.wraper__burger').on('mouseup touchstart', function() {
+    $('.wraper__menu').slideToggle(300);
+  });
+
+  // $('.wraper__burger').tap(function() {
+  //   $('.wraper__menu').slideToggle(300);
+  // });
+
+
+
   $('.wraper__feedback-people-container').slick({
     vertical: true,
     verticalSwiping: true,
@@ -33,11 +46,34 @@ $(function() {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        //centerMode: true,
+        mobileFirst: true,
       }
     }],
-    adaptiveHeight: true,
-
+    //adaptiveHeight: true,
   });
+
+
+  $(window).on('resize orientationchange', function() {
+    $('.wraper__feedback-people-container').slick('resize');
+    $('.wraper__feedback-people-container').slick('setPosition');
+    $('.wraper__feedback-people-container').slick('init');
+  });
+
+  // $(window).on("orientationchange",function(){
+  //   alert("Ориентация изменилась!");
+  // });
+
+  //   $(window).on('orientationchange', function() {
+  //   $('.wraper__feedback-people-container').slick('resize');
+  // });
+  //
+  // $(window).on('orientationchange', function() {
+  // $('.wraper__feedback-people-container').slick('setPosition');
+  // });
+
+
+
 
   $('.wraper__team-body').slick({
     adaptiveHeight: true,
@@ -51,23 +87,22 @@ $(function() {
     waitForAnimate: false,
 
     arrows: false,
-    responsive: [
-      {
-      breakpoint: 530, // максимальная ширина экрана
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-      }
+    responsive: [{
+        breakpoint: 530, // максимальная ширина экрана
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        }
       },
       {
-      breakpoint: 2600, // максимальная ширина экрана
-      settings: {
-        // nextArrow: '.wraper__team-body .slick-active',
-        // prevArrow: '.wraper__team-body .slick-active',
+        breakpoint: 2600, // максимальная ширина экрана
+        settings: {
+          // nextArrow: '.wraper__team-body .slick-active',
+          // prevArrow: '.wraper__team-body .slick-active',
+        }
       }
-    }
-  ],
+    ],
 
   });
 

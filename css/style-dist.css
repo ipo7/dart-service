@@ -132,6 +132,8 @@ body {
   line-height: 20px;
   color: #fff;
   transition: transform 0.2s;
+  -webkit-user-select: none;
+          user-select: none;
 }
 .sign-up:active {
   transform: scale(0.9);
@@ -152,6 +154,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
 }
 .button:active {
   box-shadow: 0 0 0;

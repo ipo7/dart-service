@@ -44,7 +44,7 @@ $(function() {
   $('.button').on('touchstart', function(e) {
     e.stopPropagation();
     //e.preventDefault();
-    $('.button').animate({boxShadow: 'none'});
+    //$('.button').animate({boxShadow: 'none'});
   });
 
   $('.wraper__menu .menu__link').on('touchstart', function(e) {

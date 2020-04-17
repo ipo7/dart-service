@@ -43,7 +43,11 @@ $(function() {
     $('.button').animate({boxShadow: 'none'});
   });
 
-
+  $('.menu .link').on('touchstart', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $('.menu .link').animate({transform: 'scale(0.7)'});
+  });
 
   $('.wraper__feedback-people-container').slick({
     vertical: true,

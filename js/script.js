@@ -26,18 +26,21 @@ closeItem();
 $(function() {
 
   $('.wraper__burger').on('click touchend', function(e) {
-    e.stopPropagation(); e.preventDefault();
+    e.stopPropagation();
+    e.preventDefault();
     $('.wraper__menu').slideToggle(300);
   });
 
   $('.sign-up').on('touchstart', function(e) {
-    e.stopPropagation(); e.preventDefault();
+    e.stopPropagation();
+    e.preventDefault();
     $('.sign-up').animate({transform: scale(0.7)});
   });
 
   $('.button').on('touchstart', function(e) {
-    e.stopPropagation(); e.preventDefault();
-    $('.button').animate({box-shadow: none});
+    e.stopPropagation();
+    e.preventDefault();
+    $('.button').animate({boxShadow: none});
   });
 
 

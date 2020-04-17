@@ -53,7 +53,7 @@ $(function() {
     //$(this).css("color","red");
   });
 
-  $('.wraper__footer-bottom-menu .menu__link').on('touchstart', function(e) {
+  $('.wraper__footer-bottom-menu').on('touchstart', function(e) {
     e.stopPropagation();
     //e.preventDefault();
     //$(this).css("color","red");

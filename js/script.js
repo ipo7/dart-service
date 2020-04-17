@@ -47,12 +47,12 @@ $(function() {
     $('.button').animate({boxShadow: 'none'});
   });
 
-  // $('.wraper__menu .menu__link').on('touchstart', function(e) {
-  //   //e.stopPropagation();
-  //   //e.preventDefault();
-  //   //console.log($(this).css('color'));
-  //   $(this).css("color","red");
-  // });
+  $('.wraper__menu .menu__link').on('touchstart', function(e) {
+    e.stopPropagation();
+    //e.preventDefault();
+    //console.log($(this).css('color'));
+    //$(this).css("color","red");
+  });
 
   $('.wraper__feedback-people-container').slick({
     vertical: true,

@@ -35,10 +35,10 @@ $(function() {
     $('.sign-up').animate({transform: scale(0.7)});
   });
 
-  $('.button').on('touchstart', function(e) {
-    e.stopPropagation(); e.preventDefault();
-    $('.button').animate({box-shadow: 0 0 0});
-  });
+  // $('.button').on('touchstart', function(e) {
+  //   e.stopPropagation(); e.preventDefault();
+  //   $('.button').animate({box-shadow: 0 0 0});
+  // });
 
 
 

@@ -134,6 +134,7 @@ body {
   transition: transform 0.2s;
   -webkit-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 .sign-up:active {
   transform: scale(0.9);
@@ -547,6 +548,7 @@ body {
   height: 60px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .wraper__video-text {
   color: #061e37;

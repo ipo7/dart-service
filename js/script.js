@@ -32,7 +32,7 @@ $(function() {
 
   $('.sign-up').on('touchstart', function(e) {
     e.stopPropagation(); e.preventDefault();
-    $('.sign-up').animate({transform: scale(0.9)});
+    $('.sign-up').animate({transform: scale(0.7)});
   });
 
 

@@ -400,10 +400,10 @@ body {
   background-color: #fff;
 }
 .wraper__burger:before {
-  top: 0;
+  top: -1px;
 }
 .wraper__burger:after {
-  top: 25px;
+  top: 24px;
 }
 @media screen and (max-width: 720px) {
   .wraper__burger {
@@ -415,7 +415,7 @@ body {
   width: 30px;
   height: 2px;
   background-color: #fff;
-  top: 12.5px;
+  top: 11.5px;
 }
 .wraper__menu {
   z-index: 3;

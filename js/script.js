@@ -40,7 +40,7 @@ $(function() {
   $('.button').on('touchstart', function(e) {
     e.stopPropagation();
     e.preventDefault();
-    $('.button').animate({boxShadow: none});
+    $('.button').animate({boxShadow: 'none'});
   });
 
 

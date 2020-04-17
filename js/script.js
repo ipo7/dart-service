@@ -33,19 +33,19 @@ $(function() {
 
   $('.sign-up').on('touchstart', function(e) {
     e.stopPropagation();
-    e.preventDefault();
+  //  e.preventDefault();
     $('.sign-up').animate({transform: 'scale(0.7)'});
   });
 
   $('.button').on('touchstart', function(e) {
     e.stopPropagation();
-    e.preventDefault();
+    //e.preventDefault();
     $('.button').animate({boxShadow: 'none'});
   });
 
   $('menu link').on('touchstart', function(e) {
     e.stopPropagation();
-    e.preventDefault();
+    //e.preventDefault();
     $('menu link').animate({transform: 'scale(0.7)'});
   });
 

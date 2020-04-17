@@ -25,6 +25,10 @@ closeItem();
 
 $(function() {
 
+  // $('a').on('click touchstart', function (e) {
+  //   e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
+  // });
+
   $('.wraper__burger').on('click touchend', function(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -43,10 +47,11 @@ $(function() {
     $('.button').animate({boxShadow: 'none'});
   });
 
-  $('menu link').on('touchstart', function(e) {
-    e.stopPropagation();
+  $('.wraper__menu .menu__link').on('touchstart', function(e) {
+    //e.stopPropagation();
     //e.preventDefault();
-    $('menu link').animate({transform: 'scale(0.7)'});
+    //console.log(this.innerHTML);
+    $('.wraper__menu .menu__link').css(["color","red"]);
   });
 
   $('.wraper__feedback-people-container').slick({

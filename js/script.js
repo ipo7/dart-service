@@ -37,7 +37,7 @@ $(function() {
 
   $('.sign-up').on('touchstart', function(e) {
     e.stopPropagation();
-  //  e.preventDefault();
+    //  e.preventDefault();
     //$('.sign-up').animate({transform: 'scale(0.7)'});
   });
 
@@ -50,7 +50,12 @@ $(function() {
   $('.wraper__menu .menu__link').on('touchstart', function(e) {
     e.stopPropagation();
     //e.preventDefault();
-    //console.log($(this).css('color'));
+    //$(this).css("color","red");
+  });
+
+  $('.wraper__footer-bottom-menu .menu__link').on('touchstart', function(e) {
+    e.stopPropagation();
+    //e.preventDefault();
     //$(this).css("color","red");
   });
 

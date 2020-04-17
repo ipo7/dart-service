@@ -158,7 +158,7 @@ body {
           user-select: none;
 }
 .button:active {
-  box-shadow: 0 0 0;
+  box-shadow: none;
 }
 
 .title {

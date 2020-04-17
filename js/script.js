@@ -30,7 +30,10 @@ $(function() {
     $('.wraper__menu').slideToggle(300);
   });
 
-
+  $('.sign-up').on('touchstart', function(e) {
+    e.stopPropagation(); e.preventDefault();
+    $('.sign-up').animate({transform: scale(0.9)});
+  });
 
 
 

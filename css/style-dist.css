@@ -272,6 +272,11 @@ body {
   padding-left: 10px;
   flex: 0 0 auto;
 }
+@media screen and (max-width: 376px) {
+  .people__foto {
+    display: none;
+  }
+}
 .people__text {
   display: flex;
   flex-direction: column;

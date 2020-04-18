@@ -37,6 +37,8 @@ $(function() {
   });
 
 
+
+
   $('.services-menu-item__header').on('click touchend', function(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -46,8 +48,16 @@ $(function() {
 
 
 
-  $('.sign-up').on('touchstart', function(e) {
+  $('.sign-up').on('touchstart click', function(e) {
     e.stopPropagation();
+    $('.formLogin').css('display', 'flex')
+    //  e.preventDefault();
+    //$('.sign-up').animate({transform: 'scale(0.7)'});
+  });
+
+  $('.formLogin__exit').on('touchstart click', function(e) {
+    e.stopPropagation();
+    $('.formLogin').css('display', 'none')
     //  e.preventDefault();
     //$('.sign-up').animate({transform: 'scale(0.7)'});
   });

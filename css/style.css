@@ -243,12 +243,23 @@ body {
   padding: 5px 27px 27px;
   display: none;
 }
+@media screen and (max-width: 415px) {
+  .services-menu-item__body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .services-menu-item__text {
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #061e37;
+}
+@media screen and (max-width: 415px) {
+  .services-menu-item__text {
+    padding-top: 20px;
+  }
 }
 
 .people {
@@ -1029,7 +1040,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .wraper__footer-container {
-    padding: 50px 10px 50px;
+    padding: 50px 10px;
   }
 }
 .wraper__footer-logo-menu {

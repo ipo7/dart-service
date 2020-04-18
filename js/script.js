@@ -1,24 +1,24 @@
-function closeItem() {
-
-  let body = document.querySelectorAll('.services-menu-item');
-
-  for (let elemBody of body) {
-    elemBody.addEventListener('click', func);
-
-    function func(event) {
-      // elemBody.lastElementChild.style.transition = 2000;
-
-      if (elemBody.lastElementChild.style.display == 'flex') {
-        elemBody.lastElementChild.style.display = 'none'
-
-      } else {
-        elemBody.lastElementChild.style.display = 'flex';;
-      }
-    }
-  }
-};
-
-closeItem();
+// function closeItem() {
+//
+//   let body = document.querySelectorAll('.services-menu-item');
+//
+//   for (let elemBody of body) {
+//     elemBody.addEventListener('click', func);
+//
+//     function func(event) {
+//       // elemBody.lastElementChild.style.transition = 2000;
+//
+//       if (elemBody.lastElementChild.style.display == 'flex') {
+//         elemBody.lastElementChild.style.display = 'none'
+//
+//       } else {
+//         elemBody.lastElementChild.style.display = 'flex';;
+//       }
+//     }
+//   }
+// };
+//
+// closeItem();
 
 
 
@@ -29,11 +29,22 @@ $(function() {
   //   e.preventDefault(); // этот код предотвращает стандартное поведение браузера по клику
   // });
 
+
   $('.wraper__burger').on('click touchend', function(e) {
     e.stopPropagation();
     e.preventDefault();
     $('.wraper__menu').slideToggle(300);
   });
+
+
+  $('.services-menu-item__header').on('click touchend', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    //$(this).next().slideToggle(300);
+    $(e.currentTarget).next().slideToggle(500);
+  });
+
+
 
   $('.sign-up').on('touchstart', function(e) {
     e.stopPropagation();

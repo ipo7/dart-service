@@ -102,10 +102,10 @@ $(function() {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
+        // centerMode: true,
         // mobileFirst: true,
-        // centerPadding: 50 + '%',
-        adaptiveHeight: true,
+        // centerPadding: 20,
+        // adaptiveHeight: true,
       }
     }],
     //adaptiveHeight: true,

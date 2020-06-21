@@ -84,6 +84,8 @@ $(function() {
     vertical: true,
     verticalSwiping: true,
     slidesToShow: 2,
+    // centerMode: true,
+    // centerPadding: 50,
     prevArrow: '.wraper__feedback-people-topArrow',
     nextArrow: '.wraper__feedback-people-bottomArrow',
     responsive: [{
@@ -93,6 +95,17 @@ $(function() {
         slidesToScroll: 1,
         //centerMode: true,
         mobileFirst: true,
+      }
+    },
+    {
+      breakpoint: 376, // максимальная ширина экрана
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        // mobileFirst: true,
+        // centerPadding: 50 + '%',
+        adaptiveHeight: true,
       }
     }],
     //adaptiveHeight: true,

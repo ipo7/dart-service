@@ -872,6 +872,10 @@ body {
   cursor: pointer;
 }
 
+.wraper__video-button:active {
+  background: red url("../img/play_arrow.png") 50% 50% no-repeat;
+}
+
 .wraper__video-text {
   color: #061e37;
   font-size: 12px;
@@ -1713,6 +1717,8 @@ body {
 .webp .wraper__video-ground:after{ background: url(../img/video-ground.webp) 0 0/cover no-repeat; }
 
 .webp .wraper__video-button{ background: #000 url(../img/play_arrow.webp) 50% 50% no-repeat; }
+
+.webp .wraper__video-button:active{ background: red url(../img/play_arrow.webp) 50% 50% no-repeat; }
 
 .webp .wraper__logo-circle-business{ background: #fff url(../img/business.webp) no-repeat 50% 50%; }
 

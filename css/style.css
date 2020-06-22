@@ -1251,6 +1251,10 @@ body {
   overflow: hidden;
 }
 
+.wraper__feedback-people-container .slick-slide {
+  padding: 15px 5px;
+}
+
 .wraper__feedback-people-bottomArrow {
   padding-top: 20px;
 }

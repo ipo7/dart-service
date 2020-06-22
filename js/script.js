@@ -74,6 +74,12 @@ $(function() {
     //$(this).css("color","red");
   });
 
+  $('.wraper__video-button').on('touchstart', function(e) {
+    e.stopPropagation();
+    //e.preventDefault();
+    //$(this).css("color","red");
+  });
+
   $('.wraper__footer-bottom-menu').on('touchstart', function(e) {
     e.stopPropagation();
     //e.preventDefault();

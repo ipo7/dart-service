@@ -95,25 +95,26 @@ $(function() {
     prevArrow: '.wraper__feedback-people-topArrow',
     nextArrow: '.wraper__feedback-people-bottomArrow',
     responsive: [{
-      breakpoint: 1100, // максимальная ширина экрана
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        //centerMode: true,
-        mobileFirst: true,
+        breakpoint: 1100, // максимальная ширина экрана
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          //centerMode: true,
+          mobileFirst: true,
+        }
+      },
+      {
+        breakpoint: 376, // максимальная ширина экрана
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // centerMode: true,
+          // mobileFirst: true,
+          // centerPadding: 20,
+          // adaptiveHeight: true,
+        }
       }
-    },
-    {
-      breakpoint: 376, // максимальная ширина экрана
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // centerMode: true,
-        // mobileFirst: true,
-        // centerPadding: 20,
-        // adaptiveHeight: true,
-      }
-    }],
+    ],
     //adaptiveHeight: true,
   });
 
@@ -144,11 +145,12 @@ $(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
+    centerPadding: 30,
     focusOnSelect: true,
-
+    arrows: false,
     speed: 800,
     easing: 'ease',
-    waitForAnimate: false,
+    // waitForAnimate: false,
 
     arrows: false,
     responsive: [{
@@ -159,13 +161,6 @@ $(function() {
           arrows: true,
         }
       },
-      {
-        breakpoint: 2600, // максимальная ширина экрана
-        settings: {
-          // nextArrow: '.wraper__team-body .slick-active',
-          // prevArrow: '.wraper__team-body .slick-active',
-        }
-      }
     ],
 
   });
